@@ -1,0 +1,22 @@
+paths:
+  local:
+    data_dir: "data"
+    raw_dir: "data/raw"
+    interim_dir: "data/interim"
+    processed_dir: "data/processed"
+    checkpoints_dir: "artifacts/checkpoints"
+    logs_dir: "logs"
+  colab:
+    data_dir: "/content/OceanEmbed/data"
+    raw_dir: "/content/OceanEmbed/data/raw"
+    interim_dir: "/content/OceanEmbed/data/interim"
+    processed_dir: "/content/OceanEmbed/data/processed"
+    checkpoints_dir: "/content/OceanEmbed/artifacts/checkpoints"
+    logs_dir: "/content/OceanEmbed/logs"
+  drive:
+    data_dir: "/content/drive/MyDrive/OceanEmbed/data"
+    raw_dir: "/content/drive/MyDrive/OceanEmbed/data/raw"
+    interim_dir: "/content/drive/MyDrive/OceanEmbed/data/interim"
+    processed_dir: "/content/drive/MyDrive/OceanEmbed/data/processed"
+    checkpoints_dir: "/content/drive/MyDrive/OceanEmbed/artifacts/checkpoints"
+    logs_dir: "/content/drive/MyDrive/OceanEmbed/logs"

@@ -1,0 +1,21 @@
+{
+  "model": "TC-ResUNet",
+  "checkpoint": "checkpoints/tc_resunet_best.pt",
+  "test_period": "2020-09-13 to 2020-12-31",
+  "region": "5-30N, 45-105E",
+  "grid": "0.25 deg",
+  "temporal_input": "7 days",
+  "variables": 7,
+  "input_channels": 49,
+  "output_depths": 15,
+  "target": "GLORYS12V1 thetao",
+  "current_input": "GLOBCURRENT total surface u/v currents",
+  "argo_status": "pending",
+  "available_indices": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ]
+}

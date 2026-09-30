@@ -1,0 +1,8 @@
+model:
+  architecture: "TC-ResUNet"
+  in_channels: 49  # T * 7 = 7 * 7
+  out_channels: 15 # 15 depth levels
+  base_filters: 64
+  depth: 4
+  use_attention: false
+  anomaly_mode: false

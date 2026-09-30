@@ -1,0 +1,9 @@
+xarray
+netCDF4
+pandas
+numpy
+dask
+pyyaml
+scikit-learn
+copernicusmarine
+cdsapi

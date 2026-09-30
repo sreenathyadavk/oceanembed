@@ -1,0 +1,54 @@
+domain:
+  lat_min: 5.0
+  lat_max: 30.0
+  lon_min: 45.0
+  lon_max: 105.0
+  resolution: 0.25
+  lat_size: 101
+  lon_size: 241
+
+temporal:
+  start_date: '2019-01-01'
+  end_date: '2020-12-31'
+  window_size_days: 7
+  common_overlap: "TO_BE_DETERMINED"
+
+depths_m: [0, 5, 10, 20, 30, 50, 75, 100, 125, 150, 200, 300, 500, 700, 1000]
+
+variables:
+  surface_inputs:
+    - name: SST
+      standard_name: sea_surface_temperature
+      units: degC
+    - name: SSS
+      standard_name: sea_surface_salinity
+      units: PSU
+    - name: SLA
+      standard_name: sea_surface_height_above_sea_level
+      units: m
+    - name: U_current
+      standard_name: surface_eastward_sea_water_velocity
+      units: m/s
+    - name: V_current
+      standard_name: surface_northward_sea_water_velocity
+      units: m/s
+    - name: U_wind
+      standard_name: eastward_wind
+      units: m/s
+    - name: V_wind
+      standard_name: northward_wind
+      units: m/s
+
+  target:
+    name: temperature_profile
+    standard_name: sea_water_potential_temperature
+    units: degC
+    depth_levels: 15
+
+splits:
+  train_start: '2019-01-01'
+  train_end: '2019-12-31'
+  val_start: '2020-01-01'
+  val_end: '2020-06-30'
+  test_start: '2020-07-01'
+  test_end: '2020-12-31'

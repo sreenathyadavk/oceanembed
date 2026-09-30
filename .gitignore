@@ -1,0 +1,22 @@
+# Environment & Caches
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets - Critical GitHub Protections (Blocking >100MB items)
+data/raw/
+data/processed/*.nc
+
+# Frontend protections
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Environment Variables
+.env
+.env.local
